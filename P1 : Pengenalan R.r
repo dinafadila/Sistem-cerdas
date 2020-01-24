@@ -39,13 +39,24 @@ f1 <- function(x) {
   x^(2+x)
 }
 
-# langkah 1, memasukkan nilai
 ID <- c("A1","A2","A3","A4","A5")
 Berat <- c(60,55,56,67,78)
 Tinggi <- c(156,158,177,165,180)
 
 data <- data.frame(ID,Berat,Tinggi)
 
+f1 <- function(a,b,c) {
+  ((2*a + sqrt(b+a))/a) + abs(a^c)
+}
 
-f1(b)
+f1(6,3,1)
+
+f2 <- function(t) {
+  sqrt(t^2 + 2*t)
+}
+
+# install.packages("Deriv")
+turunan = Deriv(f2)
+turunan
+
 
